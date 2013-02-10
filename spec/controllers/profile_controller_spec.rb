@@ -1,0 +1,19 @@
+require 'spec_helper'
+
+describe ProfileController do
+
+  describe "GET 'show'" do
+    it "returns http success" do
+      get 'show'
+      response.should be_success
+    end
+  end
+
+  describe "GET 'view'" do
+    it "returns http success" do
+      get 'view'
+      response.should be_success
+    end
+  end
+
+end

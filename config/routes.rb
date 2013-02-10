@@ -1,4 +1,35 @@
 Learnmaze::Application.routes.draw do
+
+
+
+ # get "profile/show"
+
+  get "profile/view"
+
+  get "specs/index"
+
+  get "specs/edit"
+  post "specs/edit"
+
+  get "home/index"
+
+  get "home/show"
+
+  authenticated :user do
+    root :to => "profile#view"
+  end
+
+
+  devise_for :users
+
+
+
+
+  resources :profile
+
+  match "profile/:id" => "profile#show"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +79,7 @@ Learnmaze::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 

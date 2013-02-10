@@ -1,0 +1,29 @@
+<h1>Profile#view</h1>
+
+<!-- Here comes the details of the user with edit options for the personal data even the activity log activeness
+Things to be implemented
+1) Activity log
+2) Show the interests
+3) Name full
+4) photo
+5) Bookmarked videos
+6) His friends
+7) His mentors
+8) Reputation
+9) Taught videos
+10) Interest
+11)2) micrpposts
+-->
+
+<%= @logged_in_spec.first_name %>
+<%=image_tag @logged_in_spec.image_url(:thumb).to_s %>
+
+<h1>Hello, <%= @logged_in_spec.first_name %>!</h1>
+
+<%= link_to "Edit Profile","/specs/edit" %>
+<p>Find me in app/views/profile/view.html.erb</p>
+
+
+
+
+Here all the updates dynamic view comes with all rss feeds this is like the world news

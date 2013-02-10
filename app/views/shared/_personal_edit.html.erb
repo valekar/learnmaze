@@ -1,0 +1,47 @@
+<%=  form_for :spec , :html => {:multipart => true} do |form|  %>
+
+    <fieldset>
+      <legend><%= @title %> </legend>
+
+      <div class="form_row">
+        <%= form.label 'first_name:' %>
+        <%= form.text_field :first_name,:size =>40 %>
+      </div>
+
+
+      <div class="form_row">
+        <%= form.label 'last_name:' %>
+        <%= form.text_field :last_name,:size =>40 %>
+      </div>
+
+      <div class ="form_row">
+        <%= radio_button :spec, :gender,"Male" %> Male
+        <%= radio_button :spec, :gender,"Female" %> Female
+      </div>
+
+      <div class ="form_row">
+        <label for =" birthday">Birthdate:</label>
+        <%= date_select :spec, :birthdate,
+                        :start_year => Spec::START_YEAR,
+                        :end_year => Time.now.year,
+                        :include_blank => true,
+                        :order => [:day,:month,:year] %>
+      </div>
+
+
+      <div class="form_row">
+        <%= form.label 'College' %>
+        <%= form.text_field :college,:size =>40 %>
+      </div>
+
+      <div class="form_row">
+        <%= form.label 'Image upload' %>
+        <%= form.file_field :image %>
+      </div>
+
+
+      <%=submit_tag "Update",:class => "submit"%>
+
+    </fieldset>
+
+<%end%>
