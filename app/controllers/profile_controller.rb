@@ -5,7 +5,7 @@ class ProfileController < ApplicationController
     @logged_in_spec = @logged_in_user.spec
 
 
-    #@new_micropost = @logged_in_user.microposts.build
+    @new_micropost = @logged_in_user.microposts.build
 
 
 
@@ -21,6 +21,9 @@ class ProfileController < ApplicationController
     @logged_in_user = current_user
     @logged_in_user.spec ||=Spec.new
     @logged_in_spec = @logged_in_user.spec
+
+    @new_micropost = @logged_in_user.microposts.build
+
   end
 
 

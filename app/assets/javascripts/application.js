@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require_tree .
+//= require microposts_create
+//= require micropost_delete
+

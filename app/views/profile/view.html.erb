@@ -15,6 +15,9 @@ Things to be implemented
 11)2) micrpposts
 -->
 
+
+
+
 <%= @logged_in_spec.first_name %>
 <%=image_tag @logged_in_spec.image_url(:thumb).to_s %>
 
@@ -26,4 +29,71 @@ Things to be implemented
 
 
 
+<h2>Your Friends</h2>
+
+<ol>
+
+
+  <% @logged_in_user.friendship.each do |friendship| %>
+      <li>
+        <%= friendship.friend.id %>
+        <%= link_to friendship.friend.spec.first_name,friendship.friend.id.to_s%>
+        <%= friendship.status %>
+        <% if friendship.status == "pending"%>
+            (<%= link_to "accept",
+                         :controller => :friendship,
+                         :action => :accept,
+                         :id => friendship.friend.id %> ) |
+        <%elsif friendship.status == "pending"%>
+            (<%= link_to "reject",
+                         :controller => :friendship,
+                         :action => :reject,
+                         :id => friendship.friend.id %>)
+        <%elsif friendship.status == "requested"%>
+            (<%= link_to "reject",
+                         :controller => :friendship,
+                         :action => :reject,
+                         :id => friendship.friend.id %>) |
+
+            (<%= link_to "accept",
+                         :controller => :friendship,
+                         :action => :accept,
+                         :id => friendship.friend.id %> )
+
+        <% end %>
+      </li>
+  <% end %>
+</ol>
+
+
+<%= form_for(@new_micropost, :url => "/microposts",remote:true) do |f| %>
+    <%= f.text_area :content, size:"25x2" %>
+    <%= f.submit  "post"%>
+<% end %>
+
+<div class="content">
+  <% if @logged_in_user.microposts.any? %>
+      <h3>Microposts (<%= @logged_in_user.microposts.count %>)</h3>
+      <ol class="microposts">
+        <%= render 'profile/micropost' %>
+      </ol>
+
+  <% end %>
+</div>
+
+
+
+<h5> U r Following</h5>
+<%  @logged_in_user.followed_users.each do |following| %>
+    <%=following.name %>
+<% end %>
+
+<h5> Your Followersss!!</h5>
+<%  @logged_in_user.followers.each do |follower| %>
+    <%=follower.name %>
+<% end %>
+
+
 Here all the updates dynamic view comes with all rss feeds this is like the world news
+
+

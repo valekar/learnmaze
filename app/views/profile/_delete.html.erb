@@ -1,0 +1,6 @@
+Posted <%= time_ago_in_words(@micropost.created_at) %> ago,
+<%= link_to "delete","/microposts/#{@micropost.id.to_s}", method: :delete,
+                                        remote:true,
+                                        title: @micropost.content,
+                                        class: 'delete_post',
+                                        name:"asdas" %>

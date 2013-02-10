@@ -1,4 +1,44 @@
-<h1>Profile#show</h1>
-<p>Find me in app/views/profile/show.html.erb</p>
+<% if @logged_in_user.id != @other_user.id %>
 
+<ol>
+  <% if Friendship.are_friends(@logged_in_user, @other_user) %>
+      (you are friends)
+  <% elsif @logged_in_user != @user %>
+      (<%= link_to "request friendship",
+                   :controller => :friendship,
+                   :action => :req,
+                   :id => @other_user.id %>)
+  <% end %>
+
+      <%= link_to "excel" , root_url %>
+
+</ol>
+
+
+
+    <div id="follow_form">
+      <% if @logged_in_user.following?(@other_user) %>
+          <%= form_for(@logged_in_user.relationships.find_by_followed_id(@other_user),
+                       html: { method: :delete }) do |f| %>
+              <%= f.submit "Unfollow", class: "btn btn-large" %>
+          <% end %>
+
+      <% else %>
+          <%= form_for(@logged_in_user.relationships.build(followed_id: @other_user.id)) do |f| %>
+              <div><%= f.hidden_field :followed_id %></div>
+              <%= f.submit "Follow", class: "btn btn-large btn-primary" %>
+          <% end %>
+
+      <% end %>
+    </div>
+
+
+
+
+
+<% else %>
+
+     safsfsdfdsfdsfs
+
+<%end %>
 

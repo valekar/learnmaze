@@ -2,6 +2,9 @@ Learnmaze::Application.routes.draw do
 
 
 
+
+
+
  # get "profile/show"
 
   get "profile/view"
@@ -25,9 +28,18 @@ Learnmaze::Application.routes.draw do
 
 
 
-  resources :profile
+  #resources :profile
 
   match "profile/:id" => "profile#show"
+
+  get "friendship/req"
+  post "friendship/req"
+
+  get "friendship/accept"
+  get "friendship/reject"
+
+  resources :microposts, only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
 
 
   # The priority is based upon order of creation:
