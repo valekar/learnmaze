@@ -1,4 +1,4 @@
-<h1>Profile#view</h1>
+<h1>Profile view of Logged in User</h1>
 
 <!-- Here comes the details of the user with edit options for the personal data even the activity log activeness
 Things to be implemented
@@ -18,10 +18,17 @@ Things to be implemented
 
 
 
+
 <%= @logged_in_spec.first_name %>
 <%=image_tag @logged_in_spec.image_url(:thumb).to_s %>
 
 <h1>Hello, <%= @logged_in_spec.first_name %>!</h1>
+
+
+<h4>Your Followings Feed Items</h4>
+<% @feed_items.each do  |feed| %>
+    <%= feed.content %>
+<% end %>
 
 <%= link_to "Edit Profile","/specs/edit" %>
 <p>Find me in app/views/profile/view.html.erb</p>
@@ -85,12 +92,12 @@ Things to be implemented
 
 <h5> U r Following</h5>
 <%  @logged_in_user.followed_users.each do |following| %>
-    <%=following.name %>
+    <%=following.email %>
 <% end %>
 
 <h5> Your Followersss!!</h5>
 <%  @logged_in_user.followers.each do |follower| %>
-    <%=follower.name %>
+    <%=follower.email %>
 <% end %>
 
 

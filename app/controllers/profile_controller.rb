@@ -24,6 +24,8 @@ class ProfileController < ApplicationController
 
     @new_micropost = @logged_in_user.microposts.build
 
+    @feed_items = current_user.feed
+
   end
 
 

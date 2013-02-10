@@ -1,3 +1,5 @@
+<!-- This is for showing other profiles -->
+
 <% if @logged_in_user.id != @other_user.id %>
 
 <ol>
@@ -19,12 +21,12 @@
     <div id="follow_form">
       <% if @logged_in_user.following?(@other_user) %>
           <%= form_for(@logged_in_user.relationships.find_by_followed_id(@other_user),
-                       html: { method: :delete }) do |f| %>
+                       html: { method: :delete },:remote => true) do |f| %>
               <%= f.submit "Unfollow", class: "btn btn-large" %>
           <% end %>
 
       <% else %>
-          <%= form_for(@logged_in_user.relationships.build(followed_id: @other_user.id)) do |f| %>
+          <%= form_for(@logged_in_user.relationships.build(followed_id: @other_user.id),:remote=>true) do |f| %>
               <div><%= f.hidden_field :followed_id %></div>
               <%= f.submit "Follow", class: "btn btn-large btn-primary" %>
           <% end %>
@@ -33,7 +35,8 @@
     </div>
 
 
-
+    <div id =" follow">
+    </div>
 
 
 <% else %>
