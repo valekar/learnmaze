@@ -28,6 +28,16 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'rmagick'
 gem 'carrierwave'
+
+gem 'whenever', :require => false
+
+gem 'omniauth'
+gem 'omniauth-facebook'
+
+gem 'sunspot_rails'
+gem 'sunspot_solr'
+
+gem "thin"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

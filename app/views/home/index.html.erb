@@ -1,5 +1,10 @@
-The sign-in form
-<%= render "shared/sign_in" %>
 
+<div class="span8">
+  <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+
+</div>
+
+<div class="span4">
 The sign-up form
 <%= render "shared/sign_up" %>
+</div>

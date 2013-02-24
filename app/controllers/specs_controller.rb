@@ -17,7 +17,14 @@ class SpecsController < ApplicationController
       if @user.spec.update_attributes(params[:spec])
         flash[:notice] = "changes applied"
         redirect_to root_url
+      else
+
+        flash[:notice] = "Please Update "
+
+
       end
+
+
     end
 
 

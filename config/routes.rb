@@ -1,8 +1,19 @@
 Learnmaze::Application.routes.draw do
 
 
+  resources :memberships, only: [:create, :destroy]
 
 
+
+
+  resources :communities
+
+
+  get "search/search"
+  post "search/search"
+
+
+  match 'search/search' => 'search#search', :as => :search_search
 
 
  # get "profile/show"
@@ -23,9 +34,26 @@ Learnmaze::Application.routes.draw do
   end
 
 
-  devise_for :users
+  devise_for :users,:controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
 
+  devise_scope :user do
+    #match 'auth/:provider/callback' => 'devise/sessions#create'
+    #match 'auth/failure', to: redirect('/')
+    #match 'signout'=> 'devise/sessions#destroy', as: 'signout'
+
+
+
+  end
+
+  #devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+
+  devise_scope :user do
+    get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
+
+    #get "facebook" => 'devise/external#index', as: 'facebook'
+    #post "facebook " => "devise/external#create"
+  end
 
 
   #resources :profile
@@ -40,6 +68,10 @@ Learnmaze::Application.routes.draw do
 
   resources :microposts, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
+
+
+  get "external/index"
+  post "/external" => "external#create"
 
 
   # The priority is based upon order of creation:

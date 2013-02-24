@@ -1,5 +1,7 @@
 class ProfileController < ApplicationController
   def show
+    # for others
+
     @logged_in_user = current_user
     @logged_in_user.spec ||=Spec.new
     @logged_in_spec = @logged_in_user.spec
@@ -18,6 +20,11 @@ class ProfileController < ApplicationController
   end
 
   def view
+
+    @data = session["devise.facebook_data"] && session["devise.facebook_data"]["extra"]["raw_info"]
+
+
+
     @logged_in_user = current_user
     @logged_in_user.spec ||=Spec.new
     @logged_in_spec = @logged_in_user.spec
@@ -25,6 +32,11 @@ class ProfileController < ApplicationController
     @new_micropost = @logged_in_user.microposts.build
 
     @feed_items = current_user.feed
+
+    @memberships = Membership.where(user_id:current_user.id)
+
+
+
 
   end
 

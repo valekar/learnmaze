@@ -1,5 +1,5 @@
 <li>
-  <% if @logged_in_user.microposts.any? %>
+  <% if @logged_in_user.microposts.count !=0 %>
   <span class="content"><%= @logged_in_user.microposts.first.content %></span>
   <span class="timestamp">
 
@@ -7,13 +7,13 @@
 
 
 
-    <% if @logged_in_user %>
+
     <%= link_to "delete", @logged_in_user.microposts.first, method: :delete,
                 data: { confirm: "You sure?" },
                 title: @logged_in_user.microposts.first.content,
                 class: 'delete_post'
     %>
-  <% end %>
+
 
 
     <% end %>

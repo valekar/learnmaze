@@ -1,9 +1,13 @@
 class Spec < ActiveRecord::Base
 
   belongs_to :user
-  attr_accessible :birthdate, :college, :first_name, :gender, :image, :interest, :last_name, :user_id
+  attr_accessible :birthdate, :college, :first_name, :gender, :image, :interest, :last_name, :user_id,:remote_image_url
 
   mount_uploader :image,ImageUploader
+
+  searchable do
+    text :college,:interest,:first_name
+  end
 
 
   ALL_FIELDS = %w(first_last last_name gender birthday interest college)

@@ -1,4 +1,4 @@
-<h1>Profile view of Logged in User</h1>
+
 
 <!-- Here comes the details of the user with edit options for the personal data even the activity log activeness
 Things to be implemented
@@ -16,61 +16,96 @@ Things to be implemented
 -->
 
 
+<div class="span3" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+  <div class="well sidebar-nav">
+    <ul class="nav nav-list">
+      <li class="nav-header">Sidebar</li>
 
+      <li><%= @logged_in_spec.first_name %></li>
+      <li><%=image_tag @logged_in_spec.image_url(:thumb).to_s %></li>
 
-
-<%= @logged_in_spec.first_name %>
-<%=image_tag @logged_in_spec.image_url(:thumb).to_s %>
-
-<h1>Hello, <%= @logged_in_spec.first_name %>!</h1>
-
-
-<h4>Your Followings Feed Items</h4>
-<% @feed_items.each do  |feed| %>
-    <%= feed.content %>
-<% end %>
-
-<%= link_to "Edit Profile","/specs/edit" %>
-<p>Find me in app/views/profile/view.html.erb</p>
+      <li><%= link_to "Edit Profile","/specs/edit" %></li>
 
 
 
 
-<h2>Your Friends</h2>
+      <h5> U r Following</h5>
+      <%  @logged_in_user.followed_users.each do |following| %>
+          <%=following.email %>
+      <% end %>
 
-<ol>
+      <h5> Your Followersss!!</h5>
+      <%  @logged_in_user.followers.each do |follower| %>
+          <%=follower.email %>
+      <% end %>
 
 
-  <% @logged_in_user.friendship.each do |friendship| %>
-      <li>
-        <%= friendship.friend.id %>
-        <%= link_to friendship.friend.spec.first_name,friendship.friend.id.to_s%>
-        <%= friendship.status %>
-        <% if friendship.status == "pending"%>
-            (<%= link_to "accept",
-                         :controller => :friendship,
-                         :action => :accept,
-                         :id => friendship.friend.id %> ) |
-        <%elsif friendship.status == "pending"%>
-            (<%= link_to "reject",
-                         :controller => :friendship,
-                         :action => :reject,
-                         :id => friendship.friend.id %>)
-        <%elsif friendship.status == "requested"%>
-            (<%= link_to "reject",
-                         :controller => :friendship,
-                         :action => :reject,
-                         :id => friendship.friend.id %>) |
 
-            (<%= link_to "accept",
-                         :controller => :friendship,
-                         :action => :accept,
-                         :id => friendship.friend.id %> )
 
+
+
+
+
+      <h2>Your Friends</h2>
+
+      <ol>
+
+
+        <% @logged_in_user.friendship.each do |friendship| %>
+            <li>
+              <%= friendship.friend.id %>
+              <%= link_to friendship.friend.spec.first_name,friendship.friend.id.to_s%>
+              <%= friendship.status %>
+              <% if friendship.status == "pending"%>
+                  (<%= link_to "accept",
+                               :controller => :friendship,
+                               :action => :accept,
+                               :id => friendship.friend.id %> ) |
+              <%elsif friendship.status == "pending"%>
+                  (<%= link_to "reject",
+                               :controller => :friendship,
+                               :action => :reject,
+                               :id => friendship.friend.id %>)
+              <%elsif friendship.status == "requested"%>
+                  (<%= link_to "reject",
+                               :controller => :friendship,
+                               :action => :reject,
+                               :id => friendship.friend.id %>) |
+
+                  (<%= link_to "accept",
+                               :controller => :friendship,
+                               :action => :accept,
+                               :id => friendship.friend.id %> )
+
+              <% end %>
+            </li>
         <% end %>
-      </li>
-  <% end %>
-</ol>
+      </ol>
+
+
+
+
+      <h6>Groups</h6>
+
+      <%= link_to 'New Community', new_community_path %></br>
+
+
+       <% @memberships.each do |membership| %>
+           <%= link_to membership.community.name, community_path(membership.community) %></br>
+       <% end %>
+
+
+    </ul>
+  </div><!--/.well -->
+</div>
+
+
+
+
+
+
+ <div class="span6">
+
 
 
 <%= form_for(@new_micropost, :url => "/microposts",remote:true) do |f| %>
@@ -88,19 +123,28 @@ Things to be implemented
   <% end %>
 </div>
 
+   <h4>Your Followings Feed Items</h4>
+   <% @feed_items.each do  |feed| %>
+       <%= feed.content %>
+   <% end %>
 
-
-<h5> U r Following</h5>
-<%  @logged_in_user.followed_users.each do |following| %>
-    <%=following.email %>
-<% end %>
-
-<h5> Your Followersss!!</h5>
-<%  @logged_in_user.followers.each do |follower| %>
-    <%=follower.email %>
-<% end %>
 
 
 Here all the updates dynamic view comes with all rss feeds this is like the world news
 
 
+ </div>
+
+
+<div class="span3">
+  <div class="well sidebar-nav">
+    <ul class="nav nav-list">
+      <li class="nav-header">Sidebar</li>
+
+
+      <li><%= link_to "Link1", "/path1"  %></li>
+      <li><%= link_to "Link2", "/path2"  %></li>
+      <li><%= link_to "Link3", "/path3"  %></li>
+    </ul>
+  </div><!--/.well -->
+</div>
