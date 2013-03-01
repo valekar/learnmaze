@@ -1,0 +1,46 @@
+<h1>Select your communities</h1>
+
+<% @departments.each do |department| %>
+    <% department.communities.each do |community| %>
+        <div class="painting">
+          <div class="name">
+            <%= community.name %>
+          </div>
+
+
+          <% if community.community_image? %>
+              <%=image_tag community.community_image_url(:thumb).to_s %>
+          <% else %>
+              <div class="image_placeholder">
+              </div>
+          <% end %>
+
+
+          <div class="actions">
+
+
+            <% if current_user.joined?(community) %>
+                <%= form_for(current_user.memberships.find_by_community_id(community),
+                             html: { method: :delete }) do |f| %>
+                    <%= f.submit "Unjoin", class: "btn btn-primary" %>
+                <% end %>
+
+            <% else %>
+                <%= form_for current_user.memberships.build(community_id:community.id) do |f| %>
+                    <div><%= f.hidden_field :community_id %></div>
+                    <%= f.submit "Join", class: "btn btn-primary" %>
+                <% end %>
+
+            <% end %>
+
+
+
+          </div>
+        </div>
+    <% end %>
+<% end %>
+
+
+<% if session["devise.facebook_data"] %>
+      <%= link_to "Done",root_url%>
+<% end %>

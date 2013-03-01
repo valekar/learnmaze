@@ -28,4 +28,11 @@ class Spec < ActiveRecord::Base
                          :allow_nil => true,
                          :message => "Is Invalid"
 
+
+  def self.find_user(result)
+        where(interest:result)||where(college:result)||where(first_name:result).pluck(:id)
+
+  end
+
+
 end

@@ -13,7 +13,7 @@ class Users::OmniauthCallbacksController < ApplicationController
   def facebook
     # You need to implement the method below in your model (e.g. app/models/user.rb)
     @user = User.find_for_facebook_oauth(request.env["omniauth.auth"], current_user)
-    auth = request.env["omniauth.auth"]
+    #auth = request.env["omniauth.auth"]
 
 
     if @user
@@ -25,11 +25,11 @@ class Users::OmniauthCallbacksController < ApplicationController
        redirect_to root_url
 
     else
-      session["devise.facebook_data"] = request.env["omniauth.auth"]
+     # session["devise.facebook_data"] = request.env["omniauth.auth"]
 
-      session["facebook_data"] = request.env["omniauth.auth"].except('extra')
+      session["devise.facebook_data"] = request.env["omniauth.auth"].except('extra')
 
-      #raise session["devise.facebook_data"].to_yaml
+
 
       redirect_to controller:"/external" ,action:"index"
     end
@@ -39,10 +39,25 @@ class Users::OmniauthCallbacksController < ApplicationController
     raise "Implement me for twitter"
   end
 
+
+  def linkedin
+    #raise request.env["omniauth.auth"].to_yaml
+    @user = User.find_for_linkedin_oauth(request.env["omniauth.auth"], current_user)
+
+    if @user
+      redirect_to root_url
+    else
+      session["devise.linkedin_data"]= request.env["omniauth.auth"]
+      #raise session["devise.linkedin_data"].to_yaml
+      redirect_to controller:"/external" ,action:"linkedin"
+    end
+
+  end
+
   private
 
   def providers
-    ["facebook", "twitter"]
+    ["facebook", "twitter","linkedin"]
   end
 
 

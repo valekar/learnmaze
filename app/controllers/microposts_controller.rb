@@ -37,6 +37,7 @@ class MicropostsController < ApplicationController
     respond_to do |format|
       if @javascript_active
         format.js {render "profile/micropost_delete"}
+        format.html {redirect_to root_url}
 
       else
         format.html { redirect_to root_url }

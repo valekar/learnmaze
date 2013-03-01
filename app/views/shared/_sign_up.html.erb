@@ -13,6 +13,10 @@
       <%= f.password_field :password_confirmation %></div>
 
 
+    <div class="field">
+      <%= f.label :department_id, "Departments"%>
+      <%= f.collection_select :department_ids, Department.order(:name),:id,:name,{},{multipart:true} %>
+    </div>
 
 
     <div><%= f.submit "Sign up" %></div>

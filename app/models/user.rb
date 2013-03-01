@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-  attr_accessible :email, :password, :password_confirmation
+  attr_accessible :email, :password, :password_confirmation,:department_ids
 
   has_one :spec , dependent: :destroy
   has_many :friendship
@@ -41,7 +41,7 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
-  devise :omniauthable, :omniauth_providers => [:facebook]
+  devise :omniauthable #:omniauth_providers => [:facebook,:linkedin]
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
@@ -55,6 +55,9 @@ class User < ActiveRecord::Base
   has_many :memberships , dependent: :destroy
   has_many :communities, :through => :memberships
 
+
+  has_many :user_departships
+  has_many :departments,through: :user_departships
 
 
   # attr_accessible :title, :body
@@ -104,6 +107,12 @@ class User < ActiveRecord::Base
     user
   end
 
+
+
+  def self.find_for_linkedin_oauth(auth,signed_in_resource = nil)
+    user = User.where(:provider => auth.provider, :uid => auth.uid).first
+    user
+  end
 
   def new_with_session(params, session)
     super.tap do |user|

@@ -23,7 +23,7 @@ class ProfileController < ApplicationController
 
     @data = session["devise.facebook_data"] && session["devise.facebook_data"]["extra"]["raw_info"]
 
-
+     @feed = FeedEntry.all
 
     @logged_in_user = current_user
     @logged_in_user.spec ||=Spec.new
@@ -31,9 +31,14 @@ class ProfileController < ApplicationController
 
     @new_micropost = @logged_in_user.microposts.build
 
+
     @feed_items = current_user.feed
 
     @memberships = Membership.where(user_id:current_user.id)
+
+    @microposts = @logged_in_user.microposts.all
+
+
 
 
 

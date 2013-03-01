@@ -1,7 +1,7 @@
 <%= form_for ([@user]) ,:url=> "/external" do |f|%>
 
     <div><%= f.label :email %><br />
-      <%= f.email_field :email, :autofocus => true, value:@data["email"]%></div>
+      <%= f.email_field :email, :autofocus => true, value:@facebook_data.info.email%></div>
 
     <div><%= f.label :password %><br />
       <%= f.password_field :password %></div>
@@ -9,6 +9,10 @@
     <div><%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation %></div>
 
+    <div class="field">
+      <%= f.label :department_id, "Departments"%>
+      <%= f.collection_select :department_ids, Department.order(:name),:id,:name,{},{multipart:true} %>
+    </div>
 
 
 

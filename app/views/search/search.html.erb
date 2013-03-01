@@ -1,12 +1,7 @@
-sdfsssssssssss
-<%= form_tag search_search_path, :method => :get do %>
-
-      <%= text_field_tag :search, params[:search], {:size => 40} %>
-      <%= submit_tag 'Search' , :name => nil %>
-
-<% end %>
+<div class="span3">
 
 
-<% @emails.each do  |email| %>
-<%= email.first_name %>
-<% end %>
+</div>
+<div class="span9">
+  <%= link_to params[:search], "/profile/#{@user_ids}" %>
+</div>

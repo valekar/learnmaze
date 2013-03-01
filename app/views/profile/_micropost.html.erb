@@ -1,22 +1,25 @@
 <li>
   <% if @logged_in_user.microposts.count !=0 %>
-  <span class="content"><%= @logged_in_user.microposts.first.content %></span>
-  <span class="timestamp">
+      <% @microposts.each do |micropost| %>
+          <span class="content"><%= micropost.content %></span>
+          <span class="timestamp">
 
 
+                <%= link_to "delete", micropost, method: :delete,
+                            data: { confirm: "You sure?" },
+                            title: @logged_in_user.microposts.first.content,
+                            class: 'delete_post'
+                %>
+          </span>
+          <% @commentable = micropost  %>
+          <% @comments = @commentable.comments %>
+          <% @comment = @commentable.comments.new %>
 
+          <%= render "comments/comments" %>
+          <%= render "comments/form" %>
+      <% end %>
 
+  <% end %>
 
-
-    <%= link_to "delete", @logged_in_user.microposts.first, method: :delete,
-                data: { confirm: "You sure?" },
-                title: @logged_in_user.microposts.first.content,
-                class: 'delete_post'
-    %>
-
-
-
-    <% end %>
-  </span>
 </li>
 

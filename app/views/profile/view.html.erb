@@ -1,5 +1,4 @@
 
-
 <!-- Here comes the details of the user with edit options for the personal data even the activity log activeness
 Things to be implemented
 1) Activity log
@@ -16,7 +15,8 @@ Things to be implemented
 -->
 
 
-<div class="span3" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<div class="span3" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+     xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
   <div class="well sidebar-nav">
     <ul class="nav nav-list">
       <li class="nav-header">Sidebar</li>
@@ -38,12 +38,6 @@ Things to be implemented
       <%  @logged_in_user.followers.each do |follower| %>
           <%=follower.email %>
       <% end %>
-
-
-
-
-
-
 
 
       <h2>Your Friends</h2>
@@ -119,8 +113,10 @@ Things to be implemented
       <ol class="microposts">
         <%= render 'profile/micropost' %>
       </ol>
-
   <% end %>
+
+
+
 </div>
 
    <h4>Your Followings Feed Items</h4>
@@ -131,6 +127,29 @@ Things to be implemented
 
 
 Here all the updates dynamic view comes with all rss feeds this is like the world news
+
+   <div class="feeds">
+     <% @feed.each do |entry| %>
+           <div class = "entry">
+             <% if strip_links(strip_tags(entry.summary)) != "" %>
+             <h3> <%= entry.name %> </h3> </br>
+             <p> <%= strip_links(strip_tags(entry.summary)) %></p></br>
+                 <%=link_to "Follow", entry.guid %>
+
+             <% @commentable = entry  %>
+             <% @comments = @commentable.comments %>
+             <% @comment = @commentable.comments.new %>
+
+                <%= render "comments/comments" %>
+                <%= render "comments/form" %>
+             <% end %>
+           </div>
+     <% end %>
+
+   </div>
+
+
+
 
 
  </div>

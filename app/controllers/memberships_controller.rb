@@ -12,7 +12,7 @@ class MembershipsController < ApplicationController
 
 
      if @membership.save
-        redirect_to community_path(@community)
+        redirect_to select_community_index_path
      end
 
   end
@@ -23,7 +23,7 @@ class MembershipsController < ApplicationController
     @community = @membership.community
 
     if @membership.delete
-      redirect_to community_path(@community)
+      redirect_to select_community_index_path
     end
 
   end

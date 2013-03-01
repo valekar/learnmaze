@@ -228,6 +228,8 @@ Devise.setup do |config|
   require "omniauth-facebook"
   config.omniauth :facebook, "189789174478045", "419df14832647e936f86be557f2f37cc" ,:image_size => 'large'
 
+  require "omniauth-linkedin"
+  config.omniauth :linkedin, "axkeskku4w62","fD8yaJvMEbyBgVs4"
 
 
 

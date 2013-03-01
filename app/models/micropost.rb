@@ -1,5 +1,6 @@
 class Micropost < ActiveRecord::Base
   attr_accessible :content, :user_id
+  has_many :comments ,as: :commentable  ,dependent: :destroy
 
   belongs_to :user
 

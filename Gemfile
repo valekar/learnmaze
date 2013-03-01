@@ -33,11 +33,23 @@ gem 'whenever', :require => false
 
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
 
 gem 'sunspot_rails'
 gem 'sunspot_solr'
 
 gem "thin"
+
+gem "curb"
+gem "nokogiri"
+gem "sax-machine"
+gem 'feedzirra'
+
+gem 'redis'
+gem 'redis-namespace'
+gem 'sidekiq'
+
+gem "rufus-scheduler"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

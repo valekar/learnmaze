@@ -4,20 +4,23 @@ class RegistrationsController <  Devise::RegistrationsController
     super
   end
 
-  def create
 
-    @user = User.new(params[:user])
-
-
-    if @user.save
-      respond_to do |format|
-        format.html {redirect_to "profile/#{current_user.id}" }
-      end
-    end
-  end
 
   def update
     super
   end
+
+
+
+  protected
+
+  def after_sign_up_path_for(resource)
+    select_community_index_path
+  end
+
+  def after_inactive_sign_up_path_for(resource)
+    select_community_index_path
+  end
+
 
 end

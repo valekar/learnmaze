@@ -22,8 +22,18 @@ class ApplicationController < ActionController::Base
     @current_ability ||= Ability.new(current_user)
   end
 
+  def after_sign_up_path_for(resource)
+    select_community_index_path
+  end
 
 
+  def stored_location_for(resource)
+    if current_user && params[:redirect_to]
+      flash[:notice] = "Congratulations, you're signed up!"
+      return params[:redirect_to]
+    end
+    super( resource )
+  end
 
 
   # this is for checking the javascript enabling on the client side

@@ -1,0 +1,6 @@
+<%if user_signed_in? %>
+    <% @comments.each do |comment|%>
+        <p><%= simple_format comment.content %></p>
+    <% end %>
+
+<% end %>

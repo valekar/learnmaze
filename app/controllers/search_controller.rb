@@ -4,7 +4,12 @@ class SearchController < ApplicationController
       fulltext params[:search]
     end
 
-    @emails = @search.results
+    @results = @search.results
+
+   # @results.each do |result|
+        @user_ids = Spec.find_user(@results)
+    #end
+
 
   end
 end

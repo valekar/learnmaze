@@ -11,13 +11,52 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130222075439) do
+ActiveRecord::Schema.define(:version => 20130301083851) do
+
+  create_table "comments", :force => true do |t|
+    t.text     "content"
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "comments", ["commentable_id", "commentable_type"], :name => "index_comments_on_commentable_id_and_commentable_type"
 
   create_table "communities", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.text     "description"
+    t.string   "image"
+    t.string   "community_image"
+  end
+
+  create_table "departments", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-    t.text     "description"
+  end
+
+  create_table "departmentships", :force => true do |t|
+    t.integer  "community_id"
+    t.integer  "department_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "departmentships", ["community_id"], :name => "index_departmentships_on_community_id"
+  add_index "departmentships", ["department_id"], :name => "index_departmentships_on_department_id"
+
+  create_table "feed_entries", :force => true do |t|
+    t.string   "name"
+    t.text     "summary"
+    t.string   "url"
+    t.datetime "published_at"
+    t.string   "guid"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "friendships", :force => true do |t|
@@ -75,6 +114,16 @@ ActiveRecord::Schema.define(:version => 20130222075439) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "user_departships", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "department_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "user_departships", ["department_id"], :name => "index_user_departships_on_department_id"
+  add_index "user_departships", ["user_id"], :name => "index_user_departships_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

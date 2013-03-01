@@ -1,12 +1,22 @@
 Learnmaze::Application.routes.draw do
 
 
+  get "select_community/index"
+
+  resources :departments
+
+
+ # get "comments/index"
+
+  #get "comments/new"
+
   resources :memberships, only: [:create, :destroy]
 
 
 
 
   resources :communities
+
 
 
   get "search/search"
@@ -30,11 +40,12 @@ Learnmaze::Application.routes.draw do
   get "home/show"
 
   authenticated :user do
+
     root :to => "profile#view"
   end
 
 
-  devise_for :users,:controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  devise_for :users,:controllers => { :omniauth_callbacks => "users/omniauth_callbacks" ,:registrations => "registrations"}
 
 
   devise_scope :user do
@@ -66,11 +77,18 @@ Learnmaze::Application.routes.draw do
   get "friendship/accept"
   get "friendship/reject"
 
-  resources :microposts, only: [:create, :destroy]
+  resources :microposts do
+    resources :comments
+  end
+
+  resources :feed_entries do
+    resources :comments
+  end
   resources :relationships, only: [:create, :destroy]
 
 
   get "external/index"
+  get "external/linkedin"
   post "/external" => "external#create"
 
 
