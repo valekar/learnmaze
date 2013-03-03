@@ -1,0 +1,6 @@
+$(document).ready(function() {
+    //$('.<%= @comment.id%>').append('<%= @comment.body%>');
+    //var dynamicDiv = $('<div class="' + <%= @comment.id%>  + '">' + <%= @comment.body%>  + '</div>');
+    var dynamicDiv = "<div class=' <%= @comment.id%> '> <%= j render 'profile/user_image' %>  <%= @comment.body%> </div>";
+    $('.<%=@comment.commentable_id %>').append(dynamicDiv);
+});

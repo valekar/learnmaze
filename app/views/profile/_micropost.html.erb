@@ -7,19 +7,37 @@
 
                 <%= link_to "delete", micropost, method: :delete,
                             data: { confirm: "You sure?" },
-                            title: @logged_in_user.microposts.first.content,
+                            title: micropost.content,
                             class: 'delete_post'
                 %>
           </span>
-          <% @commentable = micropost  %>
-          <% @comments = @commentable.comments %>
-          <% @comment = @commentable.comments.new %>
 
-          <%= render "comments/comments" %>
-          <%= render "comments/form" %>
+          <ul class="media-list">
+            <% @all_comments = micropost.comment_threads %>
+
+            <% @all_comments.each do |comment| %>
+                <li class="media-object">
+                  <%=link_to (image_tag User.find_by_id(comment.user_id).spec.image_url(:small).to_s),class:"pull-left"%>
+                  <%= comment.body %>
+
+
+            <% end %>
+            <div class= <%=micropost.id  %> ></div>
+            </li>
+
+
+          </ul>
+
+
+          <%=form_for @comment,remote:true do |f|%>
+              <%= f.label :comment ,"Comment" %>
+              <%= f.hidden_field :commentable_id, value:micropost.id %>
+              <%= f.hidden_field :commentable_type ,value:micropost.class.name %>
+              <%= f.text_area :body,rows:1,columns:10  %>
+              <%= f.submit  %>
+          <% end %>
       <% end %>
 
   <% end %>
 
 </li>
-

@@ -1,7 +1,7 @@
 class FeedEntry < ActiveRecord::Base
   attr_accessible :guid, :name, :published_at, :summary, :url
 
-  has_many :comments, as: :commentable
+
 
   # @param [Object] feed_url
 

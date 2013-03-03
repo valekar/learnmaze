@@ -111,7 +111,9 @@ Things to be implemented
   <% if @logged_in_user.microposts.any? %>
       <h3>Microposts (<%= @logged_in_user.microposts.count %>)</h3>
       <ol class="microposts">
-        <%= render 'profile/micropost' %>
+
+        <%= render "profile/micropost"%>
+
       </ol>
   <% end %>
 
@@ -136,12 +138,7 @@ Here all the updates dynamic view comes with all rss feeds this is like the worl
              <p> <%= strip_links(strip_tags(entry.summary)) %></p></br>
                  <%=link_to "Follow", entry.guid %>
 
-             <% @commentable = entry  %>
-             <% @comments = @commentable.comments %>
-             <% @comment = @commentable.comments.new %>
 
-                <%= render "comments/comments" %>
-                <%= render "comments/form" %>
              <% end %>
            </div>
      <% end %>

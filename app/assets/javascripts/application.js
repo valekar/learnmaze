@@ -19,6 +19,7 @@
 //= require home
 //= require relationships
 //= require facebook
+//= require comments
 
 
 

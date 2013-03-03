@@ -39,6 +39,10 @@ class ProfileController < ApplicationController
     @microposts = @logged_in_user.microposts.all
 
 
+    @user_who_commented = current_user
+    @comment = Comment.new
+
+
 
 
 
