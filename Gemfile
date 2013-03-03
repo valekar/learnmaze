@@ -20,6 +20,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   gem 'twitter-bootstrap-rails'
+  gem "chosen-rails"
 
 end
 
@@ -50,6 +51,9 @@ gem 'redis-namespace'
 gem 'sidekiq'
 
 gem "rufus-scheduler"
+
+gem 'acts_as_commentable_with_threading'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

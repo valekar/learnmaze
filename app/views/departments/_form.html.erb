@@ -21,8 +21,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :community_id, "Communities"%>
-    <%= f.collection_select :community_ids, Community.order(:name),:id,:name,{},{multipart:true} %>
+    <%= f.label :community_token, "Communities"%>
+    <%= f.text_field :community_token %>
   </div>
 
   <div class="actions">

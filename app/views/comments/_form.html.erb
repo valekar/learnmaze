@@ -14,6 +14,7 @@
     <% end %>
 
     <div class="fields">
+      <%=image_tag @logged_in_spec.image_url(:small).to_s %>
       <%= f.text_area :content,rows:1,columns:10  %>
     </div>
 

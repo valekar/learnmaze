@@ -9,10 +9,10 @@
     <div><%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation %></div>
 
-    <div class="field">
-      <%= f.label :department_id, "Departments"%>
-      <%= f.collection_select :department_ids, Department.order(:name),:id,:name,{},{multipart:true} %>
-    </div>
+    \<div class="field">
+  <%= f.label :department_tokens,"Departmentssss"%></br>
+  <%= f.text_field :department_tokens %>
+</div>
 
 
 

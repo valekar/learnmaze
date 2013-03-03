@@ -28,11 +28,7 @@ class ApplicationController < ActionController::Base
 
 
   def stored_location_for(resource)
-    if current_user && params[:redirect_to]
-      flash[:notice] = "Congratulations, you're signed up!"
-      return params[:redirect_to]
-    end
-    super( resource )
+   nil
   end
 
 

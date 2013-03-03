@@ -47,7 +47,7 @@ class Users::OmniauthCallbacksController < ApplicationController
     if @user
       redirect_to root_url
     else
-      session["devise.linkedin_data"]= request.env["omniauth.auth"]
+      session["devise.linkedin_data"]= request.env["omniauth.auth"].except("extra")
       #raise session["devise.linkedin_data"].to_yaml
       redirect_to controller:"/external" ,action:"linkedin"
     end

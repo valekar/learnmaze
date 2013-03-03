@@ -52,8 +52,8 @@ class ExternalController < ApplicationController
         end
 
 
-         #redirect_to select_community_index_path
-        sign_in @user, :event => :authentication
+         sign_in @user,event: :authentication
+       # sign_in_and_redirect_to @user, :event => :authentication
         redirect_to select_community_index_path
       else
         redirect_to root_url

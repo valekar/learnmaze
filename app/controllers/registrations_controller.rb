@@ -1,15 +1,5 @@
 class RegistrationsController <  Devise::RegistrationsController
 
-  def new
-    super
-  end
-
-
-
-  def update
-    super
-  end
-
 
 
   protected
@@ -18,9 +8,6 @@ class RegistrationsController <  Devise::RegistrationsController
     select_community_index_path
   end
 
-  def after_inactive_sign_up_path_for(resource)
-    select_community_index_path
-  end
 
 
 end

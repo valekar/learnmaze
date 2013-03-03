@@ -1,6 +1,11 @@
 class User < ActiveRecord::Base
 
-  attr_accessible :email, :password, :password_confirmation,:department_ids
+  attr_accessible :email, :password, :password_confirmation,:department_tokens#,:department_ids
+
+
+
+  attr_reader :department_tokens
+
 
   has_one :spec , dependent: :destroy
   has_many :friendship
@@ -127,7 +132,9 @@ class User < ActiveRecord::Base
   end
 
 
-
+  def department_tokens=(ids)
+    self.department_ids = ids.split(",")
+  end
 
 
 end

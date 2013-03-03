@@ -12,8 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require chosen-jquery
 //= require jquery.tokeninput
 //= require twitter/bootstrap
-//= require microposts_create
-//= require micropost_delete
+//= require departments
+//= require home
+//= require relationships
+//= require facebook
+
+
 

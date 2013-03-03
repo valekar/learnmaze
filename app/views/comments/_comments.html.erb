@@ -1,6 +1,10 @@
+<div class="media">
 <%if user_signed_in? %>
     <% @comments.each do |comment|%>
-        <p><%= simple_format comment.content %></p>
+
+        <%=image_tag @logged_in_spec.image_url(:small).to_s,class:"pull-left"%>
+        <div class="media-body">  <%= simple_format comment.content %></div>
     <% end %>
 
 <% end %>
+</div>

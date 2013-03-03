@@ -10,9 +10,14 @@ class MembershipsController < ApplicationController
 
      @membership = current_user.join(@community)
 
-
-     if @membership.save
-        redirect_to select_community_index_path
+     respond_to do |format|
+      if @membership.save
+         if session["devise.facebook_data"] || session["devise.linkedin_data"]
+          format.html  {redirect_to select_community_index_path}
+         else
+           format.html {redirect_to communities_path}
+         end
+      end
      end
 
   end
@@ -22,9 +27,16 @@ class MembershipsController < ApplicationController
 
     @community = @membership.community
 
+    respond_to do |format|
     if @membership.delete
-      redirect_to select_community_index_path
+      if session["devise.facebook_data"] || session["devise.linkedin_data"]
+        format.html  {redirect_to select_community_index_path}
+      else
+        format.html {redirect_to communities_path}
+      end
     end
+    end
+
 
   end
 
