@@ -24,6 +24,7 @@ group :assets do
 
 end
 
+gem 'pg'
 gem "less-rails"
 gem 'jquery-rails'
 gem 'devise'

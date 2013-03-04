@@ -134,7 +134,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_2u" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_31" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/comment_spec.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/learnmaze.iml" afterPath="$PROJECT_DIR$/.idea/learnmaze.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
@@ -167,7 +166,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="20" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.7470489">
+            <state line="26" column="7" selection-start="565" selection-end="565" vertical-scroll-proportion="0.6576728">
               <folding />
             </state>
           </provider>
@@ -985,7 +984,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="20" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.7470489">
+        <state line="26" column="7" selection-start="565" selection-end="565" vertical-scroll-proportion="0.6576728">
           <folding />
         </state>
       </provider>
