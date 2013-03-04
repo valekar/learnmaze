@@ -65,7 +65,7 @@ gem 'acts_as_commentable_with_threading'
 
 # Deploy with Capistrano
  gem 'capistrano'
-
+gem 'rvm-capistrano'
 # To use debugger
 # gem 'debugger'
 
