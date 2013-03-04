@@ -134,6 +134,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_2u" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_31" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/comment_spec.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
     </list>
     <ignored path="learnmaze.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -182,7 +183,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="42" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.36762226">
+            <state line="11" column="40" selection-start="300" selection-end="300" vertical-scroll-proportion="0.2782462">
               <folding />
             </state>
           </provider>
@@ -982,7 +983,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="42" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.36762226">
+        <state line="11" column="40" selection-start="300" selection-end="300" vertical-scroll-proportion="0.2782462">
           <folding />
         </state>
       </provider>
