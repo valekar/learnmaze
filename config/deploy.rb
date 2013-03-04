@@ -48,5 +48,12 @@ namespace :deploy do
       exit
     end
   end
+
+  namespace :solr do
+    task :reindex do
+      run "cd #{current_path} && #{rake} RAILS_ENV=#{rails_env} sunspot:solr:reindex"
+    end
+  end
+
   before "deploy", "deploy:check_revision"
 end
