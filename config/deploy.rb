@@ -2,7 +2,7 @@ require "bundler/capistrano"
 
 server "198.211.104.20", :web, :app, :db, primary: true
 
-set :application, "blog"
+set :application, "learnmaze"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
