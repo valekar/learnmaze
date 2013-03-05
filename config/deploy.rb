@@ -69,3 +69,5 @@ Symlink in-progress deployment to a shared Solr index.
     end
   end
 end
+
+#run("cd #{deploy_to}/current && /usr/bin/env rake `<task_name>` RAILS_ENV=production")`
