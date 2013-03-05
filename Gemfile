@@ -37,8 +37,8 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
 
-#gem 'sunspot_rails'
-#gem 'sunspot_solr'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 
 gem "thin"
 
