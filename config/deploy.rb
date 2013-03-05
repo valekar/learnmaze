@@ -48,12 +48,24 @@ namespace :deploy do
       exit
     end
   end
+  before "deploy", "deploy:check_revision"
 
-  namespace :solr do
-    task :reindex do
-      run "cd #{current_path} && #{rake} RAILS_ENV=#{rails_env} sunspot:solr:reindex"
-    end
+
+  task :before_update_code do
+#stop solr:
+    run "cd #{current_path} && rake sunspot:solr:stop RAILS_ENV=#{rails_env}"
   end
 
-  before "deploy", "deploy:check_revision"
+  after "deploy:update_crontab", "deploy:solr:symlink"
+
+  namespace :solr do
+    desc <<-DESC
+Symlink in-progress deployment to a shared Solr index.
+    DESC
+    task :symlink, :except => { :no_release => true } do
+      run "ln -nfs #{shared_path}/solr #{current_path}/solr"
+      run "ls -al #{current_path}/solr/pids/"
+      run "cd #{current_path} && rake sunspot:solr:start RAILS_ENV=#{rails_env}"
+    end
+  end
 end
