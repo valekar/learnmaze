@@ -135,8 +135,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_31" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/comment_spec.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/learnmaze.iml" afterPath="$PROJECT_DIR$/.idea/learnmaze.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="learnmaze.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -155,26 +154,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profile/view.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="40" selection-start="3134" selection-end="3134" vertical-scroll-proportion="-69.375">
-              <folding>
-                <marker date="1362327704000" expanded="true" signature="851:913" placeholder="do ... end" />
-                <marker date="1362327704000" expanded="true" signature="994:1054" placeholder="do ... end" />
-                <marker date="1362327704000" expanded="true" signature="1145:2435" placeholder="do ... end" />
-                <marker date="1362327704000" expanded="true" signature="1367:2399" placeholder="if ... end" />
-                <marker date="1362327704000" expanded="true" signature="2570:2697" placeholder="do ... end" />
-                <marker date="1362327704000" expanded="true" signature="2837:2925" placeholder="do ... end" />
-                <marker date="1362327704000" expanded="true" signature="2957:3156" placeholder="if ... end" />
-                <marker date="1362327704000" expanded="true" signature="3233:3283" placeholder="do ... end" />
-                <marker date="1362327704000" expanded="true" signature="3420:3760" placeholder="do ... end" />
-                <marker date="1362327704000" expanded="true" signature="3483:3727" placeholder="if ... end" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
@@ -195,19 +174,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Capfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Capfile">
+      <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+            <state line="70" column="36" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="16" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.62057334">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="3" selection-start="744" selection-end="744" vertical-scroll-proportion="0.21089631">
               <folding />
             </state>
           </provider>
@@ -276,7 +264,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/profile_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/comments.js" />
@@ -292,6 +279,7 @@
         <option value="$PROJECT_DIR$/config/nginx.conf" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -364,6 +352,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learnmaze" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learnmaze" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -383,6 +385,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="environments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learnmaze" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learnmaze" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learnmaze" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learnmaze" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -831,22 +873,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/comments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="84" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profile/_user_image.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="86" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/communities.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -884,16 +910,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="40" selection-start="3134" selection-end="3134" vertical-scroll-proportion="-69.375">
           <folding>
-            <marker date="1362327704000" expanded="true" signature="851:913" placeholder="do ... end" />
-            <marker date="1362327704000" expanded="true" signature="994:1054" placeholder="do ... end" />
-            <marker date="1362327704000" expanded="true" signature="1145:2435" placeholder="do ... end" />
-            <marker date="1362327704000" expanded="true" signature="1367:2399" placeholder="if ... end" />
-            <marker date="1362327704000" expanded="true" signature="2570:2697" placeholder="do ... end" />
-            <marker date="1362327704000" expanded="true" signature="2837:2925" placeholder="do ... end" />
-            <marker date="1362327704000" expanded="true" signature="2957:3156" placeholder="if ... end" />
-            <marker date="1362327704000" expanded="true" signature="3233:3283" placeholder="do ... end" />
-            <marker date="1362327704000" expanded="true" signature="3420:3760" placeholder="do ... end" />
-            <marker date="1362327704000" expanded="true" signature="3483:3727" placeholder="if ... end" />
+            <marker date="1362327704000" expanded="true" signature="-1:-1" placeholder="do ... end" />
+            <marker date="1362327704000" expanded="true" signature="-1:-1" placeholder="do ... end" />
+            <marker date="1362327704000" expanded="true" signature="-1:-1" placeholder="do ... end" />
+            <marker date="1362327704000" expanded="true" signature="-1:-1" placeholder="if ... end" />
+            <marker date="1362327704000" expanded="true" signature="-1:-1" placeholder="do ... end" />
+            <marker date="1362327704000" expanded="true" signature="-1:-1" placeholder="do ... end" />
+            <marker date="1362327704000" expanded="true" signature="-1:-1" placeholder="if ... end" />
+            <marker date="1362327704000" expanded="true" signature="-1:-1" placeholder="do ... end" />
+            <marker date="1362327704000" expanded="true" signature="-1:-1" placeholder="do ... end" />
+            <marker date="1362327704000" expanded="true" signature="-1:-1" placeholder="if ... end" />
           </folding>
         </state>
       </provider>
@@ -960,7 +986,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="16" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.62057334">
+        <state line="70" column="36" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="3" selection-start="744" selection-end="744" vertical-scroll-proportion="0.21089631">
           <folding />
         </state>
       </provider>
