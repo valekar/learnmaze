@@ -66,7 +66,7 @@ namespace :solr do
   task :start, :roles => :app, :except => { :no_release => true } do
     run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec sunspot-solr start --port=8983 --data-directory=#{shared_path}/solr/data --pid-dir=#{shared_path}/pids"
   end
-  after "deploy:setup_solr_data_dir", "solr:start"
+  #after "deploy:setup_solr_data_dir", "solr:start"
 
   desc "stop solr"
   task :stop, :roles => :app, :except => { :no_release => true } do
@@ -74,8 +74,11 @@ namespace :solr do
   end
   desc "reindex the whole database"
   task :reindex, :roles => :app do
-    stop
-    run "rm -rf #{shared_path}/solr/data"
+    if run "ps -ef|grep solr"
+      stop
+      run "rm -rf #{shared_path}/solr/data"
+    end
+
     start
     run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake sunspot:solr:reindex"
   end

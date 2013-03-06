@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d33adb8c-ed57-476d-b22c-9db9a8627a19" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sunspot-solr-development.log.lck" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/1/0_D5pUSVIxeghWsanofLuXSZHjEY5Lnano7CHXSMZGvUlzWETET_2BiJ22krLVzdB62QO5CO6J4HBs" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/1/bhanugate.jpg" afterPath="" />
@@ -175,7 +176,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_36" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/comment_spec.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/learnmaze.iml" afterPath="$PROJECT_DIR$/.idea/learnmaze.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
     </list>
@@ -244,7 +244,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="3" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.76724136">
+            <state line="80" column="4" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.67241377">
               <folding />
             </state>
           </provider>
@@ -913,7 +913,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="3" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.76724136">
+        <state line="80" column="4" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.67241377">
           <folding />
         </state>
       </provider>
