@@ -6,7 +6,7 @@ CarrierWave.configure do |config|
   config.remove_previously_stored_files_after_update = false
    
 
- config.root = Rails.root.join('tmp') # adding these...
-  config.cache_dir = 'carrierwave'
+# config.root = Rails.root.join('tmp') # adding these...
+ # config.cache_dir = 'carrierwave'
 
 end
