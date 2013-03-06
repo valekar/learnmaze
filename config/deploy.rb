@@ -74,10 +74,10 @@ namespace :solr do
   end
   desc "reindex the whole database"
   task :reindex, :roles => :app do
-    if run "ps -ef|grep solr"
+     run "ps -ef|grep solr"
       stop
       run "rm -rf #{shared_path}/solr/data"
-    end
+
 
     start
     run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake sunspot:solr:reindex"

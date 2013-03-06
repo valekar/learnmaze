@@ -176,7 +176,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_36" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/comment_spec.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
     </list>
     <ignored path="learnmaze.iws" />
@@ -244,7 +243,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="4" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.67241377">
+            <state line="79" column="4" selection-start="2626" selection-end="2626" vertical-scroll-proportion="0.6465517">
               <folding />
             </state>
           </provider>
@@ -913,7 +912,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="4" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.67241377">
+        <state line="79" column="4" selection-start="2626" selection-end="2626" vertical-scroll-proportion="0.6465517">
           <folding />
         </state>
       </provider>
