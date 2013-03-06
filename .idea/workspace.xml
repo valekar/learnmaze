@@ -2,67 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d33adb8c-ed57-476d-b22c-9db9a8627a19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/1/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/1/thumb_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/10/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/10/thumb_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/11/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/11/thumb_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/12/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/12/thumb_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/13/hive.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/13/thumb_hive.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/14/mah_concrete_roof.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/14/thumb_mah_concrete_roof.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/15/hive.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/15/thumb_hive.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/2/Colors.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/2/thumb_Colors.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/6/hive.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/6/thumb_hive.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/7/mah_concrete_roof.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/community/community_image/7/thumb_mah_concrete_roof.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/1/0_D5pUSVIxeghWsanofLuXSZHjEY5Lnano7CHXSMZGvUlzWETET_2BiJ22krLVzdB62QO5CO6J4HBs" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/1/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/1/hive.jpeg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/1/small_0_D5pUSVIxeghWsanofLuXSZHjEY5Lnano7CHXSMZGvUlzWETET_2BiJ22krLVzdB62QO5CO6J4HBs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/1/small_hive.jpeg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/1/thumb_0_D5pUSVIxeghWsanofLuXSZHjEY5Lnano7CHXSMZGvUlzWETET_2BiJ22krLVzdB62QO5CO6J4HBs" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/1/thumb_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/1/thumb_hive.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/2/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/2/thumb_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/3/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/3/small_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/3/thumb_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/39/572814_100000341550995_1688072750_q.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/39/thumb_572814_100000341550995_1688072750_q.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/54/572814_100000341550995_1688072750_n.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/54/thumb_572814_100000341550995_1688072750_n.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/55/203216_100001638888382_788703752_n.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/55/thumb_203216_100001638888382_788703752_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/98/572814_100000341550995_1688072750_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spec/image/98/thumb_572814_100000341550995_1688072750_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130224-1333-3717-7244/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130224-1333-3717-7244/thumb_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130226-1125-7627-1126/557" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130226-1125-7627-1126/thumb_557" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130226-1234-11384-7967/557" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130226-1234-11384-7967/thumb_557" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2008-11901-9697/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2008-11901-9697/small_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2008-11901-9697/thumb_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2011-11901-0454/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2011-11901-0454/small_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2011-11901-0454/thumb_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2011-11901-4284/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2011-11901-4284/small_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2011-11901-4284/thumb_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2017-11901-4203/bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2017-11901-4203/small_bhanugate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130305-2017-11901-4203/thumb_bhanugate.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1o.fdt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1o.fdx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1o.fnm" afterPath="" />
@@ -226,12 +175,9 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_36" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/comment_spec.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/segments.gen" afterPath="$PROJECT_DIR$/solr/data/development/index/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/learnmaze.iml" afterPath="$PROJECT_DIR$/.idea/learnmaze.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/profile_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/profile_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" afterPath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profile/view.html.erb" afterPath="$PROJECT_DIR$/app/views/profile/view.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
     </list>
     <ignored path="learnmaze.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -259,19 +205,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carrierwave.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="1" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="view.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/profile/view.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="108" selection-start="984" selection-end="984" vertical-scroll-proportion="-8.125">
+            <state line="29" column="108" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -304,10 +241,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="1" selection-start="2274" selection-end="2274" vertical-scroll-proportion="0.0">
+            <state line="83" column="3" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.76724136">
               <folding />
             </state>
           </provider>
@@ -322,10 +259,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image_uploader.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="image_uploader.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="4" selection-start="603" selection-end="603" vertical-scroll-proportion="0.22695035">
+            <state line="23" column="4" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -335,6 +272,15 @@
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="75" column="2" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="carrierwave.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="1" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -365,13 +311,13 @@
         <option value="$PROJECT_DIR$/app/helpers/bootstrap_flash_helper.rb" />
         <option value="$PROJECT_DIR$/config/nginx.conf" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/config/deploy.rb" />
         <option value="$PROJECT_DIR$/app/uploaders/community_image_uploader.rb" />
         <option value="$PROJECT_DIR$/app/controllers/profile_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/profile/view.html.erb" />
         <option value="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
+        <option value="$PROJECT_DIR$/config/deploy.rb" />
       </list>
     </option>
   </component>
@@ -383,10 +329,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="24" />
-    <option name="width" value="1382" />
-    <option name="height" value="752" />
+    <option name="y" value="-5" />
+    <option name="width" value="1366" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -619,6 +564,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -650,13 +602,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="false" name="test" type="RakeRunConfigurationType" factoryName="Rake">
@@ -756,11 +701,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spetask-scheduler" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Produtask-schedulertion: learnmaze" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: learnmaze" />
-      <item index="4" class="java.lang.String" itemvalue="Ruby.profile_controller" />
+      <item index="0" class="java.lang.String" itemvalue="Ruby.profile_controller" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spetask-scheduler" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Produtask-schedulertion: learnmaze" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Development: learnmaze" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -798,14 +743,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="24" width="1382" height="752" extended-state="7" />
+    <frame x="0" y="-5" width="1366" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20440729" sideWeight="0.23447205" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20820668" sideWeight="0.23447205" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.69875777" sideWeight="0.49772036" order="0" side_tool="true" content_ui="tabs" />
@@ -875,37 +820,27 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="39" column="0" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/unicorn_init.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="476" selection-end="476" vertical-scroll-proportion="0.3409091">
-          <folding />
-        </state>
+        <state line="14" column="38" selection-start="476" selection-end="476" vertical-scroll-proportion="0.3409091" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="30" selection-start="212" selection-end="212" vertical-scroll-proportion="0.14610389">
-          <folding />
-        </state>
+        <state line="6" column="30" selection-start="212" selection-end="212" vertical-scroll-proportion="0.14610389" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="3" selection-start="789" selection-end="789" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
+        <state line="18" column="3" selection-start="789" selection-end="789" vertical-scroll-proportion="-1.875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/boot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/nginx.conf">
@@ -917,21 +852,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/uploaders/community_image_uploader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="621" selection-end="621" vertical-scroll-proportion="0.4806071">
-          <folding />
-        </state>
+        <state line="19" column="12" selection-start="621" selection-end="621" vertical-scroll-proportion="0.4806071" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="1" selection-start="2274" selection-end="2274" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -957,6 +883,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profile/view.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="108" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="4" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="2" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0">
@@ -964,23 +911,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profile/view.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="108" selection-start="984" selection-end="984" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="4" selection-start="603" selection-end="603" vertical-scroll-proportion="0.22695035">
+        <state line="83" column="3" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.76724136">
           <folding />
         </state>
       </provider>
