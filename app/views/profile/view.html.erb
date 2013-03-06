@@ -24,9 +24,10 @@ Things to be implemented
       <li><%= @logged_in_spec.first_name %></li>
       <li><%=image_tag @logged_in_spec.image_url(:thumb).to_s %></li>
 
+      <%= image_tag(image_user_path(@logged_in_user), :alt => "Imagesss", :class => "avatar round")  %>
       <li><%= link_to "Edit Profile","/specs/edit" %></li>
 
-
+        <%= image_tag @logged_in_spec.image_url(:thumb).split("\/home\/srini\/workspace\/learnmaze")[1].to_s %>
 
 
       <h5> U r Following</h5>

@@ -67,6 +67,14 @@ Learnmaze::Application.routes.draw do
   end
 
 
+  resources :user do
+    member do
+      get 'image'
+    end
+  end
+
+
+
   #resources :profile
 
   match "profile/:id" => "profile#show"

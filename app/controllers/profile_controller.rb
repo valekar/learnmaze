@@ -44,11 +44,12 @@ class ProfileController < ApplicationController
 
 
 
-
-
-
   end
 
+
+  def image
+    send_file "#{Rails.root}/photos/#{current_user.image_url}",:disposition => 'inline', :type=>"application/jpg", :x_sendfile=>true
+  end
 
 
 end
